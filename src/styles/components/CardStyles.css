@@ -1,0 +1,343 @@
+.cardWrapper {
+  position: relative;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.stock .cardBadge {
+  background-color: #edfded;
+  border: 2px solid #4caf50;
+  color: #4caf50;
+}
+
+.crypto .cardBadge {
+  background-color: #fcfeffe1;
+  border: 2px solid hsl(211, 100%, 56%);
+  color: #0077e6e1;
+}
+.nft .cardBadge {
+  background-color: #ffffff;
+  border: 2px solid #ff4081;
+  color: #ff4081;
+}
+
+.stock .circleBadge {
+  background-color: #edfded;
+  border: 2px solid #4caf50;
+  color: #4caf50;
+  left: 8px;
+}
+
+.crypto .circleBadge {
+  background-color: #fcfeffe1;
+  border: 2px solid hsl(211, 100%, 56%);
+  color: #0077e6e1;
+}
+.nft .circleBadge {
+  top: 20px !important;
+  left: 14px;
+  background-color: #ffffff;
+  border: 2px solid #ff4081;
+}
+
+.circleBadge {
+  position: absolute;
+  top: 22px !important;
+  left: 6px;
+  font-size: 8px !important;
+  font-weight: 500 !important;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.logoCard {
+  position: absolute;
+  top: -55px;
+  right: -8px;
+  width: 200px;
+  height: 200px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid transparent;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+  border-radius: 5px 30px 5px 30px !important;
+  padding: 4px;
+}
+
+.logo-inner-card {
+  width: 195px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  margin: 1px;
+  border-radius: 5px 30px 5px 30px !important;
+}
+
+.stock .change {
+  padding-left: 10px;
+  width: 40%;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ff4081;
+  border: 1px solid #ff4081;
+  background-color: white;
+}
+
+.crypto .change {
+  padding-left: 10px;
+  width: 40%;
+  height: 20px;
+  border-radius: 40px;
+  font-weight: 800 !important;
+  font-size: 14px;
+  color: #4caf50;
+  background-color: white;
+  border: 1px solid #4caf50;
+}
+
+.logoImage {
+  margin: auto;
+  width: 60%;
+  padding-top: 30px;
+  height: auto;
+}
+
+.footer {
+  width: 100%;
+  background: #00000060;
+  border-top: 1px solid #ddd;
+  text-align: start;
+  border-radius: 0px 0px 5px 20px;
+  padding: 8px 0;
+}
+
+.footerText {
+  padding-left: 20px;
+  font-size: 14px !important;
+  color: #ffffff;
+  font-weight: 600 !important;
+}
+
+.left-logoCard {
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  left: -6px;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid transparent;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+  border-radius: 0px 10px 10px 0px !important;
+}
+
+.cardBadge {
+  position: absolute;
+  top: 10px !important;
+  left: 15px;
+  font-size: 8px !important;
+  font-weight: 500 !important;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+.bookmarkIcon {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #e91e63;
+  border-radius: 0px 0px 10px 10px !important;
+  cursor: pointer;
+}
+.bookmarkIcon img {
+  width: 80%;
+}
+
+.infoCard {
+  width: 260px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border: 3px solid transparent;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 5;
+  border-radius: 20px 10px 20px 0px !important;
+  border: 3px solid transparent;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 5;
+  background-color: #f3f3f3 !important;
+  border-radius: 20px 10px 20px 0px !important;
+}
+
+.info-card-content {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  margin-top: 155px;
+  background-color: rgba(0, 0, 0, 0.603);
+}
+
+.leftSection {
+  flex: 1;
+}
+
+.leftSection .currency{
+font-size: 9px;
+}
+
+.extra-info{
+  font-weight: 600 !important;
+padding-right: 10px;
+}
+
+.rightSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.circleContainer {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  position: absolute;
+  top: -150px;
+}
+
+.cardBadge {
+  top: 20px;
+  font-size: 6px;
+  left: 10px;
+}
+
+.stock .logo-inner-card {
+  background-color: #76b900;
+}
+
+.crypto .logo-inner-card {
+  background-color: #f7931a;
+}
+
+.nft .logo-inner-card {
+  background-color: #ffffff;
+}
+
+.stock .left-logoCard {
+  background-color: #4caf50;
+}
+
+.crypto .left-logoCard {
+  background-color: hsl(211, 100%, 56%);
+}
+
+.nft .left-logoCard {
+  background-color: #fc0456;
+}
+
+.stock .logoCard {
+  background-color: #edfded;
+}
+
+.crypto .logoCard {
+  background-color: #fcfeffe1;
+}
+
+.nft .logoCard {
+  background-color: #ffffff;
+}
+
+.stock .bookmarkIcon {
+  background-color: #4caf50;
+}
+
+.crypto .bookmarkIcon {
+  background-color: hsl(211, 100%, 56%);
+}
+
+.nft .bookmarkIcon {
+  background-color: #fc0456;
+}
+.stock .circleContainer {
+  background-color: #4caf50;
+}
+
+.crypto .circleContainer {
+  background-color: hsl(211, 100%, 56%);
+}
+
+.nft .circleContainer {
+  color: #000;
+  background-color: #fc0456;
+}
+
+.nft .circleContainer .cardBadge {
+  left: 15px;
+}
+
+.nft .change {
+  background-color: #fc0456;
+}
+.cardButton {
+  margin-top: 10px !important;
+  padding: 12px 20px;
+  background-color: hsl(211, 100%, 56%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 11px !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cardButton:hover {
+  background-color: hsl(211, 100%, 56%);
+}
+
+.cardWrapper:hover .infoCard,
+.cardWrapper:hover .logoCard,
+.cardWrapper:hover .left-logoCard {
+    transform: translateY(-10px);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+.cardWrapper.stock .infoCard,
+.cardWrapper.stock .logoCard {
+  border-color: #4caf50;
+}
+
+.cardWrapper.crypto .infoCard,
+.cardWrapper.crypto .logoCard {
+  border-color: hsl(211, 100%, 56%);
+}
+
+.cardWrapper.nft .infoCard,
+.cardWrapper.nft .logoCard {
+  border-color: #ff4081;
+}
